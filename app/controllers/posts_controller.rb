@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   def create
     Post.create(content: params[:content])
-    redirecto_to action: :index
+    redirect_to action: :index
   end
 
   def checked
